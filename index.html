@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Destrava</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/032fb6bd9b.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="antes-depois.css">
+  <link rel="stylesheet" href="btn-glow.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <main>
+    <header id="header"></header>
+    <div class="divider"></div>
+    <div id="antes-depois"></div>
+    <div class="divider"></div>
+
+    <!-- Conteúdo principal aqui -->
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script>
+    async function loadSection(id, url) {
+      const res = await fetch(url);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+
+    loadSection('header', 'header.html');
+    loadSection('antes-depois', 'antes-depois.html');
+    loadSection('footer', 'footer.html');
+  </script>
+</body>
+</html>
