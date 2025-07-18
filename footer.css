@@ -1,0 +1,11 @@
+:root {
+  --rosa-claro: #fde2e8;
+  --branco: #ffffff;
+}
+footer {
+  background-color: var(--rosa-claro);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
