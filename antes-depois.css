@@ -1,0 +1,57 @@
+.antes-depois { 
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 2rem;
+}
+.antes-depois-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.antes-depois-image {
+  width: 450px;
+  height: auto;
+}
+.antes-depois-title {
+  font-size: 2em;
+}
+.antes-depois-title span {
+  color: #ff6347; /* Cor do destaque */
+  font-weight: bold; /* Negrito para destaque */
+}
+
+.antes-depois-description {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+/* telas com largura máxima de 991px */
+@media (max-width: 991px) {
+  .antes-depois {
+    grid-template-columns: 1fr; 
+    text-align: center;
+  }
+
+  .antes-depois-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .antes-depois-text {
+    padding: 0 1rem;
+    align-items: center;
+  }
+}
+
+/* telas com largura máxima de 767px (celulares) */
+@media (max-width: 767px) {
+  .antes-depois-title {
+    font-size: 1.5em;
+  }
+
+  .antes-depois-description {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
