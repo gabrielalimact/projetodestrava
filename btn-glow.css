@@ -13,6 +13,7 @@
     font-size: 1em;
     font-weight: bold;
     padding: 0.8rem 2rem;
+    text-align: center;
 }
 
 .glow-on-hover:before {
