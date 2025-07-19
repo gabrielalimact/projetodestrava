@@ -1,11 +1,22 @@
-:root {
-  --rosa-claro: #fde2e8;
-  --branco: #ffffff;
-}
-footer {
-  background-color: var(--rosa-claro);
+.footer {
+  background-color: #f9e6ea; 
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #555;
+  padding: 0.7rem 0;
+  font-size: 0.8rem;
+  color: #444;
+  border-top: 1px solid #e0aab6;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  color: #d43f73;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
