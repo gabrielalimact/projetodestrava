@@ -13,7 +13,7 @@
   height: auto;
 }
 .antes-depois-title {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .antes-depois-title span {
   color: #ff6347; /* Cor do destaque */
@@ -21,7 +21,7 @@
 }
 
 .antes-depois-description {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 2;
 }
 
